@@ -74,7 +74,12 @@ def main():
         ]
         for student in students_to_insert:
             execute_query(conn, insert_query, student)
-        print(f"{len(students_to_insert)} students inserted successfully.\n")
+        print(f"{len(students_to_insert)} students inserted successfully.")
+        print("\nStudents after insertion:")
+        inserted_students = execute_query(conn, "SELECT id, name, age FROM students;", fetch='all')
+        for student in inserted_students:
+            print(dict(student))
+        print("\n")
 
         # --- 문제 3: SELECT ---
         print("--- 4. Task 3: Selecting data ---")
