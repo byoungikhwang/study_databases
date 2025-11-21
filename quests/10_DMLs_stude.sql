@@ -41,3 +41,4 @@ DELETE FROM
     news_articles
 WHERE 
     title = '경제 성장률 상승';
+    
