@@ -10,6 +10,7 @@ CREATE TABLE news_articles (
     author VARCHAR(500),
     published_at VARCHAR(500) -- 날짜 타입은 VARCHAR(500)으로 지정
 );
+
 -- 문제 2. 초기 데이터 삽입 (INSERT)
 -- 요구사항: 위 데이터를 테이블에 추가하라
 INSERT INTO news_articles (title, url, author, published_at) VALUES
