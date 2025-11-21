@@ -14,7 +14,7 @@ INSERT INTO students (id, name, age) VALUES (3, '박철수', 26);
 SELECT * FROM students;
 
 -- [문제 3b] READ (SELECT) 기본 조회: 나이 22세 이상
-SELECT * FROM students WHERE age >= 22;
+SELECT id_name, namd from users_uuid_name;"
 
 -- [문제 3c] READ (SELECT) 기본 조회: 이름 '홍길동'
 SELECT * FROM students WHERE name = '홍길동';
@@ -26,7 +26,7 @@ WHERE id = 2;
 
 -- [문제 5] DELETE 연습
 DELETE FROM students
-WHERE id = 3;
+WHERE id_name = 3;
 
 -- [문제 6] PRIMARY KEY 이해 문제 (실습용 스키마)
 CREATE TABLE books (
