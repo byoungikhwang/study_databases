@@ -10,3 +10,4 @@ CREATE TABLE news_articles (
     author VARCHAR(500),
     published_at VARCHAR(500) -- 날짜 타입은 VARCHAR(500)으로 지정
 );
+

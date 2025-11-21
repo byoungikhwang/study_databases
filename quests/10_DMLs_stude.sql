@@ -10,12 +10,13 @@ CREATE TABLE news_articles (
     author VARCHAR(500),
     published_at VARCHAR(500) -- 날짜 타입은 VARCHAR(500)으로 지정
 );
--- 2. 초기 데이터 삽입 (INSERT)
+-- 문제 2. 초기 데이터 삽입 (INSERT)
 -- 요구사항: 위 데이터를 테이블에 추가하라
 INSERT INTO news_articles (title, url, author, published_at) VALUES
 ('AI 시대 도래', 'https://news.com/ai', '홍길동', '2025-01-01'),
 ('경제 성장률 상승', 'https://news.com/economy', '이영희', '2025-01-05');
--- 3. 데이터 조회 (SELECT)
+
+-- 문제 3. 데이터 조회 (SELECT)
 -- 요구사항: author가 "홍길동"인 데이터만 조회하는 쿼리 작성
 SELECT 
     id, title, url, author, published_at
@@ -23,7 +24,8 @@ FROM
     news_articles
 WHERE 
     author = '홍길동';
--- 4. 데이터 수정 (UPDATE)
+
+-- 문제 4. 데이터 수정 (UPDATE)
 -- 요구사항: 첫 번째 뉴스 제목("AI 시대 도래")을 'AI와 미래 사회의 변화'로 변경하는 UPDATE문 작성
 UPDATE 
     news_articles
@@ -31,7 +33,8 @@ SET
     title = 'AI와 미래 사회의 변화'
 WHERE 
     title = 'AI 시대 도래';
--- 5. 데이터 삭제 (DELETE)
+
+-- 문제 5. 데이터 삭제 (DELETE)
 -- 요구사항: 두 번째 뉴스("경제 성장률 상승")를 삭제하는 DELETE문 작성
 DELETE FROM 
     news_articles
