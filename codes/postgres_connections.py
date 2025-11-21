@@ -1,3 +1,4 @@
+
 import psycopg2
 import os
 
@@ -20,7 +21,3 @@ with conn.cursor() as cursor :
                     SET name = 'code Name'
                     WHERE id_name = 'f3e223ca-69d2-4432-bcaa-d7b01b44dbf9';""")
 conn.commit()
-
-    # cursor.execute("""UPDATE users_uuid_name
-    #                 SET name = 'code Name'
-    #                 WHERE id_name = '9a328b2c-f195-499e-a3d0-c76ca59be4dd';""")
