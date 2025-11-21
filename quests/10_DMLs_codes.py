@@ -5,10 +5,10 @@ import os
 # --- Database Connection ---
 # 환경 변수 또는 직접 값을 사용하여 연결 정보를 설정합니다.
 # 예: os.environ.get('DB_NAME', 'your_db')
-DB_NAME = os.environ.get('DB_NAME', 'mydatabase')
-DB_USER = os.environ.get('DB_USER', 'myuser')
-DB_PASSWORD = os.environ.get('DB_PASSWORD', 'mypassword')
-DB_HOST = os.environ.get('DB_HOST', 'localhost')
+DB_NAME = os.environ.get('DB_NAME', 'main_db')
+DB_USER = os.environ.get('DB_USER', 'admin')
+DB_PASSWORD = os.environ.get('DB_PASSWORD', 'admin123')
+DB_HOST = os.environ.get('DB_HOST', 'db_postgresql')
 DB_PORT = os.environ.get('DB_PORT', '5432')
 
 def get_connection():
